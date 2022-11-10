@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptune</title>
+    <style>
+        body {
+            background-image: url("Dark\ space.png");
+            background-size: cover;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(83,120,198);
+            text-align: center;
+        }
+
+        img {
+            width: 30rem;
+            animation: rotation 60s infinite linear;
+            display: grid;
+            margin-left: 0rem;
+            margin-right: 3rem;
+        }
+        @media (min-width:20rem)
+        {
+            .img{
+                display: grid;
+                place-items: center;
+            }
+        }
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+    @media (min-width:20rem)
+    {
+        .img{
+            display: grid;
+            place-items: center;
+            }
+        }
+        @media (min-width:20rem)
+        {
+            .info{
+                width:30rem;
+                text-align: center;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .info{
+                width:100%;
+                text-align: center;
+            }
+        }
+        .main {
+            display: grid;
+            gap:3em;
+        }
+        @media (min-width:20rem)
+        {
+            .main{
+                grid-template-columns: 80%;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .main{
+                grid-template-columns: 30% 55% 15%;
+            }
+        }
+        .next {
+            width: 2rem;
+            height: 1rem;
+            color: aliceblue;
+            
+        }
+        @media (min-width:20rem)
+        {
+            .next{
+                margin-left: 13rem;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .next{
+                margin-top: 15rem;
+                margin-left: 6rem;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+            color: rgb(187,194,236);
+            bottom: 0;
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Neptune</h1>
+    <div class="main">
+        <div class="img"> <img src="Planet img/neptune.png"></div>
+        <div class="info">
+            <p>Dark, cold, and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in
+                our
+                solar system.<br>More than 30 times as far from the Sun as Earth, Neptune is the only planet in our
+                solar
+                system not visible to the naked eye and the first predicted by mathematics before its discovery. In 2011
+                Neptune completed its first 165-year orbit since its discovery in 1846.<br><br>Neptune orbits our Sun, a
+                star, and is the eighth planet from the Sun at a distance of about 2.8 billion miles (4.5 billion
+                kilometers).<br><br>Neptune is about four times wider than Earth. If Earth were a large apple, Neptune
+                would
+                be the size of a basketball.<br><br>Neptune takes about 16 hours to rotate once (a Neptunian day), and
+                about
+                165 Earth years to orbit the sun (a Neptunian year).</p>
+        </div>
+        <div class="next">
+            <a href="../index.html">Main</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun</title>
+    <style>
+        body {
+            background-image: url("Dark\ space.png");
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(215, 69, 0);
+            text-align: center;
+        }
+
+        img {
+            width: 30rem;
+            animation: rotation 60s infinite linear;
+            display: grid;
+            margin-left: 0rem;
+            margin-right: 3rem;
+        }
+
+        @media (min-width:20rem) {
+            .img {
+                display: grid;
+                place-items: center;
+            }
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+        @media (min-width:20rem) {
+            .img {
+                display: grid;
+                place-items: center;
+            }
+        }
+
+        @media (min-width:20rem) {
+            .info {
+                width: 50rem;
+                text-align: center;
+            }
+        }
+
+        @media (min-width:80rem) {
+            .info {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .main {
+            display: grid;
+            gap: 3em;
+        }
+
+        @media (min-width:20rem) {
+            .main {
+                grid-template-columns: 80%;
+            }
+        }
+
+        @media (min-width:80rem) {
+            .main {
+                grid-template-columns: 30% 55% 15%;
+            }
+        }
+
+        .next {
+            width: 2rem;
+            height: 1rem;
+            color: aliceblue;
+
+        }
+
+        @media (min-width:20rem) {
+            .next {
+                margin-left: 13rem;
+            }
+        }
+
+        @media (min-width:80rem) {
+            .next {
+                margin-top: 15rem;
+                margin-left: 6rem;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+            color: rgb(253, 176, 15);
+            bottom: 0;
+            width: 50%;
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sun</h1>
+    <div class="main">
+        <div class="img"><img src="Planet img/sun.png"></div>
+        <div class="info">
+            <p>Our Sun is a 4.5 billion-year-old star – a hot glowing ball of hydrogen and helium at the center of our
+                solar
+                system. The Sun is about 93 million miles (150 million kilometers) from Earth, and without its energy,
+                life
+                as we know it could not exist here on our home planet.<br>The Sun is the largest object in our solar
+                system.
+                The Sun’s volume would need 1.3 million Earths to fill it. Its gravity holds the solar system together,
+                keeping everything from the biggest planets to the smallest bits of debris in orbit around it. The
+                hottest
+                part of the Sun is its core, where temperatures top 27 million degrees Fahrenheit (15 million degrees
+                Celsius). The Sun’s activity, from its powerful eruptions to the steady stream of charged particles it
+                sends
+                out, influences the nature of space throughout the solar system.<br>The Sun is the only star in our
+                solar
+                system. It is the center of our solar system, and its gravity holds the solar system together.
+                Everything in
+                our solar system revolves around it – the planets, asteroids, comets, and tiny bits of space debris.</p>
+        </div>
+        <div class="next">
+            <a href="mercury.html">Next</a>
+        </div>
+    </div>
+</body>
+
+</html>

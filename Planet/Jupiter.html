@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter</title>
+    <style>
+        body {
+            background-image: url("Dark\ space.png");
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(120, 85, 57);
+            text-align: center;
+        }
+
+        img {
+            width: 30rem;
+            animation: rotation 60s infinite linear;
+            display: grid;
+            margin-left: 0rem;
+            margin-right: 3rem;
+        }
+
+        @media (min-width:20rem) {
+            .img {
+                display: grid;
+                place-items: center;
+            }
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+
+        
+        @media (min-width:20rem) {
+            .img {
+                display: grid;
+                place-items: center;
+            }
+        }
+        @media(min-width:20rem)
+        {
+            .info{
+                width:30rem;
+                text-align: center;
+            }
+        }
+        @media (min-width:80rem) {
+            .info {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .main {
+            display: grid;
+            gap: 3em;
+        }
+
+        @media (min-width:20rem) {
+            .main {
+                grid-template-columns: 80%;
+            }
+        }
+
+        @media (min-width:80rem) {
+            .main {
+                grid-template-columns: 30% 55% 15%;
+            }
+        }
+
+        .next {
+            width: 2rem;
+            height: 1rem;
+            color: aliceblue;
+
+        }
+
+        @media (min-width:20rem) {
+            .next {
+                margin-left: 13rem;
+            }
+        }
+        
+        @media (min-width:80rem) {
+            .next {
+                margin-top: 15rem;
+                margin-left: 6rem;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+            color: rgb(193, 188, 178);
+            bottom: 0;
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Jupiter</h1>
+    <div class="main">
+        <div class="img"><img src="Planet img/Jupiter.png"></div> 
+        <div class="info">
+            <p>Fifth in line from the Sun, Jupiter is, by far, the largest planet in the solar system – more than twice
+                as
+                massive as all the other planets combined.<br>Jupiter's familiar stripes and swirls are actually cold,
+                windy
+                clouds of ammonia and water, floating in an atmosphere of hydrogen and helium. Jupiter’s iconic Great
+                Red
+                Spot is a giant storm bigger than Earth that has raged for hundreds of years.<br><br>Jupiter is a gas
+                giant
+                and so lacks an Earth-like surface. If it has a solid inner core at all, it’s likely only about the size
+                of
+                Earth.<br><br>Jupiter's Great Red Spot is a gigantic storm that’s about twice the size of Earth and has
+                raged for over a century.<br><br>Jupiter cannot support life as we know it. But some of Jupiter's moons
+                have
+                oceans beneath their crusts that might support life.</p>
+        </div>
+        <div class="next">
+            <a href="saturn.html">Next</a>
+        </div>
+    </div>
+</body>
+
+</html>

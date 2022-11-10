@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth</title>
+    <style>
+        body {
+            background-image: url("Dark\ space.png");
+            background-size: cover;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(111,80,55);
+            text-align: center;
+        }
+
+        img {
+            width: 30rem;
+            animation: rotation 60s infinite linear;
+            display: grid;
+            margin-left: 0rem;
+            margin-right: 3rem;
+        }
+        @media (min-width:20rem)
+        {
+            .img{
+                display: grid;
+                place-items: center;
+            }
+        }
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+    @media (min-width:20rem)
+    {
+        .img{
+            display: grid;
+            place-items: center;
+            }
+        }
+        @media (min-width:20rem)
+        {
+            .info{
+                width:30rem;
+                text-align: center;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .info{
+                width:100%;
+                text-align: center;
+            }
+        }
+        .main {
+            display: grid;
+            gap:3em;
+        }
+        @media (min-width:20rem)
+        {
+            .main{
+                grid-template-columns: 80%;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .main{
+                grid-template-columns: 30% 55% 15%;
+            }
+        }
+        .next {
+            width: 2rem;
+            height: 1rem;
+            color: aliceblue;
+            
+        }
+        @media (min-width:20rem)
+        {
+            .next{
+                margin-left: 13rem;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .next{
+                margin-top: 15rem;
+                margin-left: 6rem;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+            color: rgb(252,249,200);
+            bottom: 0;
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mercury</h1>
+    <div class="main">
+        <div class="img"> <img src="Planet img/mercury.png"></div>
+        <div class="info">
+            <p>The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than
+                Earth's
+                Moon.From the surface of Mercury, the Sun would appear more than three times as large as it does when
+                viewed
+                from
+                Earth, and the sunlight would be as much as seven times brighter. Despite its proximity to the Sun,
+                Mercury
+                is not the hottest planet in our solar system – that title belongs to nearby Venus, thanks to its dense
+                atmosphere.
+
+                Because of Mercury's elliptical – egg-shaped – orbit, and sluggish rotation, the Sun appears to rise
+                briefly, set, and rise again from some parts of the planet's surface. The same thing happens in reverse
+                at
+                sunset.<br><br>
+                Standing on Mercury's surface at its closest approach to the Sun, our star would appear more than three
+                times larger than it does on Earth.<br><br>
+                Two NASA missions have explored Mercury: Mariner 10 was the first to fly by Mercury, and MESSENGER was
+                the
+                first to orbit. ESA's BepiColombo is on its way to Mercury.</p>
+        </div>
+        <div class="next">
+            <a href="venus.html">Next</a>
+        </div>
+    </div>
+</body>
+
+</html>

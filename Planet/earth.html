@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth</title>
+    <style>
+        body {
+            background-image: url("Dark\ space.png");
+            background-size: cover;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(40, 57, 137);
+            text-align: center;
+        }
+
+        img {
+            width: 30rem;
+            animation: rotation 60s infinite linear;
+            display: grid;
+            margin-left: 0rem;
+            margin-right: 3rem;
+        }
+        @media (min-width:20rem)
+        {
+            .img{
+                display: grid;
+                place-items: center;
+            }
+        }
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+    @media (min-width:20rem)
+    {
+        .img{
+            display: grid;
+            place-items: center;
+            }
+        }
+        @media (min-width:20rem)
+        {
+            .info{
+                width:30rem;
+                text-align: center;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .info{
+                width:100%;
+                text-align: center;
+            }
+        }
+        .main {
+            display: grid;
+            gap:3em;
+        }
+        @media (min-width:20rem)
+        {
+            .main{
+                grid-template-columns: 80%;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .main{
+                grid-template-columns: 30% 55% 15%;
+            }
+        }
+        .next {
+            width: 2rem;
+            height: 1rem;
+            color: aliceblue;
+            
+        }
+        @media (min-width:20rem)
+        {
+            .next{
+                margin-left: 13rem;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .next{
+                margin-top: 15rem;
+                margin-left: 6rem;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+            color: rgb(95, 122, 85, 1.5);
+            bottom: 0;
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The Earth</h1>
+    <div class="main">
+        <div class="img"> <img src="Planet img/Earth-PNG.png"></div>
+        <div class="info">
+            <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. While large
+                volumes of water can be found throughout the Solar System, only Earth sustains liquid surface water.
+                About
+                71% of Earth's surface is made up of the ocean, dwarfing Earth's polar ice, lakes, and rivers.<br>
+                The remaining 29% of Earth's surface is land, consisting of continents and islands. Earth's surface
+                layer is
+                formed of several slowly moving tectonic plates, interacting to produce mountain ranges, volcanoes, and
+                earthquakes. Earth's liquid outer core generates the magnetic field that shapes Earth's magnetosphere,
+                deflecting destructive solar winds.<br>
+                Earth's atmosphere consists mostly of nitrogen and oxygen. Greenhouse gases in the atmosphere like
+                carbon
+                dioxide (CO2) trap a part of the energy from the Sun close to the surface. Water vapor is widely present
+                in
+                the atmosphere and forms clouds that cover most of the planet. More solar energy is received by tropical
+                regions than polar regions and is redistributed by atmospheric and ocean circulation. A region's climate
+                is
+                governed by latitude, but also by elevation and proximity to moderating oceans. In most areas severe
+                weather, such as tropical cyclones, thunderstorms, and heatwaves, occurs and greatly impacts life.</p>
+        </div>
+        <div class="next">
+            <a href="mars.html">Next</a>
+        </div>
+    </div>
+</body>
+
+</html>

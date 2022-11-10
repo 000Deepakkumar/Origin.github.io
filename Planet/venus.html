@@ -1,0 +1,141 @@
+!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus</title>
+    <style>
+        body {
+            background-image: url("Dark\ space.png");
+            background-size: cover;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(164,82,25);
+            text-align: center;
+        }
+
+        img {
+            width: 30rem;
+            animation: rotation 60s infinite linear;
+            display: grid;
+            margin-left: 0rem;
+            margin-right: 3rem;
+        }
+        @media (min-width:20rem)
+        {
+            .img{
+                display: grid;
+                place-items: center;
+            }
+        }
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+    @media (min-width:20rem)
+    {
+        .img{
+            display: grid;
+            place-items: center;
+            }
+        }
+        @media (min-width:20rem)
+        {
+            .info{
+                width:30rem;
+                text-align: center;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .info{
+                width:100%;
+                text-align: center;
+            }
+        }
+        .main {
+            display: grid;
+            gap:3em;
+        }
+        @media (min-width:20rem)
+        {
+            .main{
+                grid-template-columns: 80%;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .main{
+                grid-template-columns: 30% 55% 15%;
+            }
+        }
+        .next {
+            width: 2rem;
+            height: 1rem;
+            color: aliceblue;
+            
+        }
+        @media (min-width:20rem)
+        {
+            .next{
+                margin-left: 13rem;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .next{
+                margin-top: 15rem;
+                margin-left: 6rem;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+            color:rgb(237,172,67);
+            bottom: 0;
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Venus</h1>
+    <div class="main">
+      <div class="img">  <img src="Planet img/Venus.png"></div>
+        <div class="info"><p>Venus is the second planet from the Sun and is Earth’s closest planetary neighbor. It’s one of the four
+            inner, terrestrial (or rocky) planets, and it’s often called Earth’s twin because it’s similar in size and
+            density. These are not identical twins, however – there are radical differences between the two worlds.
+            Venus has a thick, toxic atmosphere filled with carbon dioxide and it’s perpetually shrouded in thick,
+            yellowish clouds of sulfuric acid that trap heat, causing a runaway greenhouse effect. It’s the hottest
+            planet in our solar system, even though Mercury is closer to the Sun. Surface temperatures on Venus are
+            about 900 degrees Fahrenheit (475 degrees Celsius) – hot enough to melt lead. The surface is a rusty color
+            and it’s peppered with intensely crunched mountains and thousands of large volcanoes. Scientists think it’s
+            possible some volcanoes are still active.<br><br>
+
+            Venus has crushing air pressure at its surface – more than 90 times that of Earth – similar to the pressure
+            you'd encounter a mile below the ocean on Earth.<br><br>
+
+            Another big difference from Earth – Venus rotates on its axis backward, compared to most of the other
+            planets in the solar system. This means that, on Venus, the Sun rises in the west and sets in the east,
+            opposite to what we experience on Earth. </p>
+        </div>  <div class="next">
+                <a href="earth.html">Next</a>
+    </div>
+    </div>
+</body>
+
+</html>

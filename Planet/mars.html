@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars</title>
+    <style>
+        body {
+            background-image: url("Dark\ space.png");
+            background-size: cover;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(100,23,6);
+            text-align: center;
+        }
+
+        img {
+            width: 30rem;
+            animation: rotation 60s infinite linear;
+            display: grid;
+            margin-left: 0rem;
+            margin-right: 3rem;
+        }
+        @media (min-width:20rem)
+        {
+            .img{
+                display: grid;
+                place-items: center;
+            }
+        }
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+    @media (min-width:20rem)
+    {
+        .img{
+            display: grid;
+            place-items: center;
+            }
+        }
+        @media (min-width:20rem)
+        {
+            .info{
+                width:30rem;
+                text-align: center;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .info{
+                width:100%;
+                text-align: center;
+            }
+        }
+        .main {
+            display: grid;
+            gap:3em;
+        }
+        @media (min-width:20rem)
+        {
+            .main{
+                grid-template-columns: 80%;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .main{
+                grid-template-columns: 30% 55% 15%;
+            }
+        }
+        .next {
+            width: 2rem;
+            height: 1rem;
+            color: aliceblue;
+            
+        }
+        @media (min-width:20rem)
+        {
+            .next{
+                margin-left: 13rem;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .next{
+                margin-top: 15rem;
+                margin-left: 6rem;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+            color:rgb(254,218,100);
+            bottom: 0;
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mars</h1>
+    <div class="main">
+        <div class="img"> <img src="Planet img/mars.png"></div>
+        <div class="info">
+            <p>​Mars is the fourth planet from the Sun – a dusty, cold, desert world with a very thin atmosphere. Mars
+                is
+                also a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was
+                even more active in the past.<br><br>Mars is one of the most explored bodies in our solar system, and
+                it's
+                the only planet where we've sent rovers to roam the alien landscape.<br><br>NASA currently has two
+                rovers
+                (Curiosity and Perseverance), one lander (InSight), and one helicopter (Ingenuity) exploring the surface
+                of
+                Mars.<br><br>The Mars Orbiter Mission (MOM), also called Mangalyaan (from Sanskrit mangala, "Mars" and
+                yāna,
+                "craft, vehicle"), was a space probe orbiting Mars since 24 September 2014. It was launched on 5
+                November 2013 by the Indian Space Research Organisation (ISRO).It was India's first
+                interplanetary mission and it made ISRO the fourth space agency to achieve Mars orbit, after Roscosmos,
+                NASA, and the European Space Agency.It made India the first Asian nation to reach Martian orbit and the
+                first nation in the world to do so on its maiden attempt.</p>
+        </div>
+        <div class="next">
+            <a href="Jupiter.html">Next</a>
+        </div>
+    </div>
+</body>
+
+</html>

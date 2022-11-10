@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturn</title>
+    <style>
+        body {
+            background-image: url("Dark\ space.png");
+            background-size: cover;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(149,117,83);
+            text-align: center;
+        }
+
+        img {
+            width: 30rem;
+            animation: rotation 60s infinite linear;
+            display: grid;
+            margin-left: 0rem;
+            margin-right: 3rem;
+        }
+        @media (min-width:20rem)
+        {
+            .img{
+                display: grid;
+                place-items: center;
+            }
+        }
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+    @media (min-width:20rem)
+    {
+        .img{
+            display: grid;
+            place-items: center;
+            }
+        }
+        @media (min-width:20rem)
+        {
+            .info{
+                width:30rem;
+                text-align: center;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .info{
+                width:100%;
+                text-align: center;
+            }
+        }
+        .main {
+            display: grid;
+            gap:3em;
+        }
+        @media (min-width:20rem)
+        {
+            .main{
+                grid-template-columns: 80%;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .main{
+                grid-template-columns: 30% 55% 15%;
+            }
+        }
+        .next {
+            width: 2rem;
+            height: 1rem;
+            color: aliceblue;
+            
+        }
+        @media (min-width:20rem)
+        {
+            .next{
+                margin-left: 13rem;
+            }
+        }
+        @media (min-width:80rem)
+        {
+            .next{
+                margin-top: 15rem;
+                margin-left: 6rem;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+            color: rgb(255,226,187);
+            bottom: 0;
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Saturn</h1>
+    <div class="main">
+    <div class="img"> <img src="Planet img/saturn.png"></div>
+     <div class="info"><p>Saturn is the sixth planet from the Sun and the second-largest planet in our solar system.<br>Adorned with
+            thousands of beautiful ringlets, Saturn is unique among the planets. It is not the only planet to have rings
+            – made of chunks of ice and rock – but none are as spectacular or as complicated as Saturn's.<br>Like fellow
+            gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium.<br><br>Saturn is the sixth
+            planet from our Sun (a star) and orbits at a distance of about 886 million miles (1.4 billion kilometers)
+            from the Sun.<br><br>Saturn takes about 10.7 hours (no one knows precisely) to rotate on its axis once a
+            Saturn “day” and 29 Earth years to orbit the sun.<br><br>Saturn has 53 known moons with an additional 29
+            moons awaiting confirmation of their discovery  that is a total of 82 moons.<br><br>Saturn cannot support
+            life as we know it, but some of Saturn's moons have conditions that might support life.</p>
+        </div><div class="next">
+                <a href="uranus.html">Next</a>
+    </div>
+    </div>
+</body>
+
+</html>
